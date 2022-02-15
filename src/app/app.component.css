@@ -1,0 +1,9 @@
+article{
+overflow: hidden;
+}
+#container{
+    width: 99.5%;
+    height: 100%;
+    display: block;
+    margin: 5px auto;
+}

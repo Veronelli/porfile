@@ -1,0 +1,56 @@
+.container>.option>a>h2 , .container>.btn-menu>h2{
+    color: white;
+    font-size: 18px;
+    margin: 4px 0px;
+    display: table;
+    color: rgb(243, 243, 243);
+    padding:2px 14px;
+    border-radius: 10px;
+}
+#nav-container{
+    width: 99.5%;
+    display: flex;
+    margin: 0% auto;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex: 1;
+}
+.container>.option, .container>.btn-menu{
+    flex: 1;
+    position: relative;
+}
+.container>.btn-menu>h2{
+    cursor: pointer;
+}
+.container>.option:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.container>.option:nth-child(3){
+    display: flex;
+    justify-content: end;
+}
+.container>.option>a>h2:hover, .btn-menu>h2:hover{
+    background: rgba(236, 236, 236, 0.219);
+}
+app-menu{
+    position: absolute;
+    top: 50px;
+}
+.show-menu{
+    display: block;
+}
+.hide-menu{
+    display: none;
+}
+#background{
+    position: absolute;
+    top: -50px;
+    left: -5px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}

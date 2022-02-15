@@ -1,0 +1,26 @@
+<div id="nav-body">
+  <div id="nav-container">
+    <div class="container">
+      <div href="" class="btn-menu menu" >
+        <h2 (click)="toggleMenu()">Menú</h2>
+        <div class="menu-container" [ngClass]="showMenu ?'show-menu':'hide-menu'">
+          
+          <div id="background"(click)="toggleMenu()">
+          </div>
+          <app-menu></app-menu>
+
+        </div>
+      </div>
+      <div class="option">
+        <a routerLink="/">
+          <h2>Facundo Veronelli</h2>
+        </a>
+      </div>
+      <div class="option">
+        <a href="">
+          <h2>Descargar CV</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

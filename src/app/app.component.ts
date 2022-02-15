@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProfileService } from './porfile/profile.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'profile';
+  showTopBar:boolean=true;
+  constructor(private route:Router){
+  }
+  setShowBar(value:boolean){
+    this.showTopBar = value;
+  }
 }
